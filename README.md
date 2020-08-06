@@ -47,6 +47,10 @@ sudo apt-get update
 
 
 ## Setting up the amazon web server
+**Access AWS here**
+https://eu-west-1.console.aws.amazon.com/console/home?region=eu-west-1
+
+**Steps to follow**
 1. Select EC2
 2. Click on Instances
 3. Launch instance
