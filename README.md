@@ -44,3 +44,35 @@ sudo apt-get update
 **http://3.250.104.226:3000/**
 
 **http://3.250.104.226:3000/fibonacci**
+
+
+## Setting up the amazon web server
+1. Select EC2
+2. Click on Instances
+3. Launch instance
+4. Select ubuntu server 16.04
+	- Version dependent on environment wanted 
+5. Deploy to the DevOps student VPC
+6. Create a subnet of EU west 1a.
+7. Enable Public IP
+8. Add storage
+	- Select 8GiB
+9. Next, add tags
+	- Name, Then appropriate name
+10. Security groups
+	- Create new group
+	- Source for all will be My IP
+	- Add the below rows:
+	- SSH
+	- HTTP
+	- HTTPS
+	- Custom TCP. Port range: 3000
+	- Custom TCP. Port range: 8080
+	- Custom TCP. Port Range: 1024-65535
+	- This last port is the ephermal port, allowing installation of software
+11. Review and launch
+12. Upon launch it will ask for key pair. 
+	- Select DevOps student. 
+	- Normally an individual key pair would be created
+13. Download the relevant SSH key
+	- Place it an easy to reference location
