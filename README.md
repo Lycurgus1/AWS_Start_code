@@ -81,12 +81,24 @@ https://eu-west-1.console.aws.amazon.com/console/home?region=eu-west-1
 13. Download the relevant SSH key
 	- Place it an easy to reference location
 
+## Adding security permissions
+1. Navigate to AWS Instance
+2. Select actions with your instance selected
+3. Select networking
+4. Change security groups
+5. Add the relevant group
+6. This gives access the to person with that security group
+
 ## What is AWS?
 **Infastructure as a service**
 - AWS provides server space and computing capacity amongst many other services it offers
 
 **What is EC2**
 - EC2 is Amazon Elastic Compute Cloud Capacity. It provides computing capacity over the cloud
+
+**What is a security group**
+- A type of firewall
+- A list of IPs allowed and not allowed
 
 ## What are "envionments"
 **Definition**
