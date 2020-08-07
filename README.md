@@ -80,3 +80,19 @@ https://eu-west-1.console.aws.amazon.com/console/home?region=eu-west-1
 	- Normally an individual key pair would be created
 13. Download the relevant SSH key
 	- Place it an easy to reference location
+
+## What is AWS?
+**Infastructure as a service**
+- AWS provides server space and computing capacity amongst many other services it offers
+
+**What is EC2"
+- EC2 is Amazon Elastic Compute Cloud Capacity. It provides computing capacity over the cloud
+
+## What are "envionments"
+**Definition**
+- Environments are where code is run
+
+**Types**
+- Production is where the developers test it
+- Testing - Where the code is tested vigorously
+- Deployment - Where code is deployed to customers from
