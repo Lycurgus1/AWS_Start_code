@@ -85,7 +85,7 @@ https://eu-west-1.console.aws.amazon.com/console/home?region=eu-west-1
 **Infastructure as a service**
 - AWS provides server space and computing capacity amongst many other services it offers
 
-**What is EC2"
+**What is EC2**
 - EC2 is Amazon Elastic Compute Cloud Capacity. It provides computing capacity over the cloud
 
 ## What are "envionments"
