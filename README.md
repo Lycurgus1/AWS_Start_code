@@ -2,10 +2,10 @@
 
 ## Manual run steps
 1. Copy app folder into machine
-```scp -i ~/.ssh/DevOpsStudents.pem -r app/ ubuntu@3.250.104.226:~/app/```
+```scp -i ~/.ssh/DevOpsStudents.pem -r app/ ubuntu@52.30.88.196:~/app/```
 
 2. Enter machine
-```ssh -i ~/.ssh/DevOpsStudents.pem ubuntu@3.250.104.226```
+```ssh -i ~/.ssh/DevOpsStudents.pem ubuntu@52.30.88.196```
 
 3. Update and upgrade server software
 ```
@@ -41,9 +41,9 @@ sudo apt-get update
 ```node app.js```
 
 ## Links to check
-**http://3.250.104.226:3000/**
+**http://52.30.88.196:3000/**
 
-**http://3.250.104.226:3000/fibonacci**
+**http://52.30.88.196:3000/fibonacci/8**
 
 
 ## Setting up the amazon web server

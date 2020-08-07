@@ -4,8 +4,8 @@ Vagrant.configure("2") do |config|
   config.vm.network "private_network", ip: "192.168.10.100"
   config.hostsupdater.aliases = ["development.local"]
   # Syncing a folder that contains needed files for the machine
-  vm.synced_folder "environment", "/home/ubuntu/environment"
+  config.vm.synced_folder "environment", "/home/ubuntu/environment"
   # These files are then provisioned(autoloaded) into the server upon start up
-  vm.provision "shell", path: "environment/provision.sh", privileged: false
+  config.vm.provision "shell", path: "environment/provision.sh", privileged: false
 
 end

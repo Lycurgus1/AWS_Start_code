@@ -3,7 +3,7 @@
 #!/bin/bash
 
 # transfer files
-scp -i ~/.ssh/DevOpsStudents.pem -r app/ ubuntu@34.244.73.252:~/app/
+# scp -i ~/.ssh/DevOpsStudents.pem -r app/ ubuntu@52.30.88.196:~/app/
 
 # Update the sources list
 sudo apt-get update -y
