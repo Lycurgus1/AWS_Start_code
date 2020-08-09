@@ -6,7 +6,7 @@ Enter machine
 ```ssh -i ~/.ssh/DevOpsStudents.pem ubuntu@52.16.174.19```
 
 Copy db folder into server, using devsops student file as key
-```scp -i ~/.ssh/DevOpsStudents.pem -r db/ ubuntu@52.16.174.19`3:~/db/```
+```scp -i ~/.ssh/DevOpsStudents.pem -r db/ ubuntu@52.16.174.19Y:~/db/```
 
 cd into db folder
 # be careful of these keys, they will go out of date
