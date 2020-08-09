@@ -1,11 +1,11 @@
 # AWS starter code
 
 ## Manual run steps
-1. Copy app folder into machine
-```scp -i ~/.ssh/DevOpsStudents.pem -r app/ ubuntu@52.30.88.196:~/app/```
+1. Copy app folder into server, using devsops student file as key
+```scp -i ~/.ssh/DevOpsStudents.pem -r app/ ubuntu@32.247.159.153:~/app/```
 
 2. Enter machine
-```ssh -i ~/.ssh/DevOpsStudents.pem ubuntu@52.30.88.196```
+```ssh -i ~/.ssh/DevOpsStudents.pem ubuntu@32.247.159.153```
 
 3. Update and upgrade server software
 ```
@@ -41,9 +41,9 @@ sudo apt-get update
 ```node app.js```
 
 ## Links to check
-**http://52.30.88.196:3000/**
+**http://32.247.159.153:3000/**
 
-**http://52.30.88.196:3000/fibonacci/8**
+**http://32.247.159.153:3000/fibonacci/8**
 
 
 ## Setting up the amazon web server
@@ -56,7 +56,7 @@ https://eu-west-1.console.aws.amazon.com/console/home?region=eu-west-1
 3. Launch instance
 4. Select ubuntu server 16.04
 	- Version dependent on environment wanted 
-5. Deploy to the DevOps student VPC
+5. Deploy to the vpc DevOps student network
 6. Create a subnet of EU west 1a.
 7. Enable Public IP
 8. Add storage
@@ -65,6 +65,7 @@ https://eu-west-1.console.aws.amazon.com/console/home?region=eu-west-1
 	- Name, Then appropriate name
 10. Security groups
 	- Create new group
+		- May be able to use previously created group
 	- Source for all will be My IP
 	- Add the below rows:
 	- SSH
