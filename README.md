@@ -2,10 +2,10 @@
 
 ## Manual run steps
 1. Copy app folder into server, using devsops student file as key
-```scp -i ~/.ssh/DevOpsStudents.pem -r app/ ubuntu@32.247.159.153:~/app/```
+```scp -i ~/.ssh/DevOpsStudents.pem -r app/ ubuntu@34.247.159.153:~/app/```
 
 2. Enter machine
-```ssh -i ~/.ssh/DevOpsStudents.pem ubuntu@32.247.159.153```
+```ssh -i ~/.ssh/DevOpsStudents.pem ubuntu@34.247.159.153```
 
 3. Update and upgrade server software
 ```
@@ -41,9 +41,9 @@ sudo apt-get update
 ```node app.js```
 
 ## Links to check
-**http://32.247.159.153:3000/**
+**http://34.247.159.153:3000/**
 
-**http://32.247.159.153:3000/fibonacci/8**
+**http://34.247.159.153:3000/fibonacci/8**
 
 
 ## Setting up the amazon web server
