@@ -1,4 +1,4 @@
-# Readme for setting up DB server
+# Readme for recording information for database server
 
 ## Manual steps
 

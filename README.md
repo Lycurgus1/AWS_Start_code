@@ -1,52 +1,52 @@
 # AWS starter code
 
-## Manual run steps
-1. Copy app folder into server, using devsops student file as key
-```scp -i ~/.ssh/DevOpsStudents.pem -r app/ ubuntu@34.247.159.153:~/app/```
+## Dependencies
+- Git Bash
+	- This is used to access and manipulate the machines
+	- Download it here (alongisde other git softwrare): https://git-scm.com/downloads
 
-2. Enter machine
-```ssh -i ~/.ssh/DevOpsStudents.pem ubuntu@34.247.159.153```
+- Ruby
+	- This is used to interact withe the code of the databases
+	- Installed at: https://www.ruby-lang.org/en/downloads/
 
-3. Update and upgrade server software
-```
-sudo apt-get update
-sudo apt-get upgrade -y
-```
+## Installation instructions
+1. Create two AWS instances
+	- Instructions to this can be seen below under seetting up an amazon web server
+	- Make a note of the servers IPs
+2. Fork this repositry and download it in an appropriate location
+	- The various IPs will need to be changed based on the IPs assigned to the servers
+3. Setup the database server
+	- ./db_setup.sh
+4. Provision the database server
+	- cd db/
+	- chmod 777 db_provision.sh
+	- ./db_provision.sh
+	- Mongod status will be shown upon end of the provision script
+	- if no errors are present enter exit
+5. Setup the app server
+	- ./app_setup.sh
+	- cd app/
+	- chmod 777 provision.sh
+	- ./provision.sh
+	- pm2 start app.js -f will run the app
+6. Access the app
+	- The below links will lead to the app
+	- http://app_ip_here/post does not work currently
 
-4. Install nodejs
-```
-sudo apt-get install python-software-properties -y
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-sudo apt-get install nodejs -y
-``` 
-5. Install pm2
-```sudo npm install pm2 -g```
+## Links to access file
+**http://app_ip_here/**
 
-6. Install NGINX
-```sudo apt-get install nginx -y```
+**http://app_ip_here/fibonacci/8**
 
-7. Install npm and node
-```
-sudo apt-get install nodejs -y
-sudo apt-get install npm -y
-sudo apt-get update
-```
-8. Change into app folder
-```cd app/```
-
-9. Install NPM
-```sudo npm install -y```
-
-10. Run app
-```node app.js```
-
-## Links to check
-**http://18.203.127.67:3000/**
-
-**http://18.203.127.67:3000/fibonacci/8**
+## Files where IP needs updating
+	- app_setup.sh
+	- db_setup.sh
+	- app/provision.sh
+	- db/db_provision.sh
+	- link urls
 
 
-## Setting up the amazon web server
+## Setting up a amazon web server
 **Access AWS here**
 https://eu-west-1.console.aws.amazon.com/console/home?region=eu-west-1
 
@@ -65,7 +65,7 @@ https://eu-west-1.console.aws.amazon.com/console/home?region=eu-west-1
 	- Name, Then appropriate name
 10. Security groups
 	- Create new group
-		- May be able to use previously created group
+		- If already created a group, skip the below instructions previously created group
 	- Source for all will be My IP
 	- Add the below rows:
 	- SSH
