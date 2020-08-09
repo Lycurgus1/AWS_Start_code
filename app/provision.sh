@@ -2,9 +2,6 @@
 
 #!/bin/bash
 
-# transfer files
-# scp -i ~/.ssh/DevOpsStudents.pem -r app/ ubuntu@52.30.88.196:~/app/
-
 # Update the sources list
 sudo apt-get update -y
 
@@ -66,14 +63,16 @@ sudo apt-get install nodejs -y
 sudo apt-get install npm -y
 sudo apt-get update
 
-# install pm2
-sudo npm install pm2 -g
+# export db host value to enable database connection
+export DB_HOST="mongodb://34.245.57.210:27017/posts"
 
 # change into app folder
-#cd /home/ubuntu/app/
+cd /home/ubuntu/app/
 
-# install npm
-#sudo install npm -y
+# install npm dependecies
+sudo  npm install
+sudo npm install pm2 -g
+pm2 stop all
 
 # run app
-#node app.js
+#pm2 start app.js -f
