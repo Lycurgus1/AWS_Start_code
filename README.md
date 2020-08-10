@@ -1,5 +1,6 @@
 # AWS starter code
 
+
 ## Dependencies
 - Git Bash
 	- This is used to access and manipulate the machines
