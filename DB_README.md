@@ -2,6 +2,7 @@
 ## Provisioning 2 AMIs (Amazon Machine Instance) 
 **The Task**
 - Have /posts running successfully from app ami
+
 **Prerequisites**
 - Create a new db ami (from the EC2 dashboard)
 - Provision the new db ami
