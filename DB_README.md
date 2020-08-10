@@ -54,7 +54,7 @@ C. select edit inbound rules
 
 D. Update inbound rules as per below image. The blacked out sources are "my ip" and 3.250... are the app ip/32
 
-![import_rules_db_server](imagesmd/lsoutput.jpeg)
+![import_rules_db_server](images/import_rules_db_server.jpg)
 
 E. save and exit
 

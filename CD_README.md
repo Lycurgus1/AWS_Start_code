@@ -12,3 +12,6 @@
 **Restricts build**
 - Jenkins restricts build to specific node
 - sparta-ubuntu-node leads to code not running in Jenkins
+
+## CI Pipeline set-up
+
