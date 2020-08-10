@@ -4,9 +4,9 @@
 - Have /posts running successfully from app ami
 
 **Prerequisites**
-- Create a new db ami (from the EC2 dashboard)
-- Provision the new db ami
-- Add app ami to the security group of db ami's inbound rule - this allows for bi-lateral communication between the two machines
+- Create a new DB AMI (from the EC2 dashboard)
+- Provision the new DB AMI
+- Add app ami to the security group of DB AMI's inbound rule - this allows for bi-lateral communication between the two machines
 - create environment variable in app AMI that establishes connection to mongodb
 
 **For information regarding creating a new AMI [click here](https://github.com/Lycurgus1/AWS_Start_code/blob/master/README.md)**
