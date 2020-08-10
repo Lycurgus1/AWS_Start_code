@@ -64,7 +64,7 @@ sudo apt-get install npm -y
 sudo apt-get update
 
 # export db host value to enable database connection
-echo export DB_HOST="mongodb://34.245.57.210:27017/posts" >> ~/.bashrc
+echo export DB_HOST="mongodb://54.75.18.114:27017/posts" >> ~/.bashrc
 sudo apt-get update -y
 
 # change into app folder
