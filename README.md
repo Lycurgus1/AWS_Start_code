@@ -12,6 +12,7 @@
 ## Installation instructions
 1. Create two AWS instances
 	- Instructions to this can be seen below under setting up an amazon web server
+	- DB_README contains instructions how creating the DB instance correctly
 	- Make a note of the servers IPs
 2. Fork this repositry and download it in an appropriate location
 	- The various IPs will need to be changed based on the IPs assigned to the servers
