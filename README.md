@@ -34,9 +34,9 @@
 	- http://app_ip_here/post does not work currently
 
 ## Links to access file
-**http://app_ip_here/**
+**http://3.250.17.181/**
 
-**http://app_ip_here/fibonacci/8**
+**http://3.250.17.181/fibonacci/8**
 
 ## Files where IP needs updating
 	- app_setup.sh

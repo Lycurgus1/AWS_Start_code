@@ -7,18 +7,18 @@ echo "deb https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse"
 # update and upgrading sexiterver
 sudo apt-get update -y
 sudo apt-get upgrade -y
-sudo apt-get -clean
-sudo apt-get update
+#sudo apt-get -clean
+#sudo apt-get update
 
 # removing files
-sudo rm -rf /var/lib/apt/lists/*
-sudo apt-get update
-sudo rm -rf /var/lib/apt/lists/partial
+#sudo rm -rf /var/lib/apt/lists/*
+#sudo apt-get update
+#sudo rm -rf /var/lib/apt/lists/partial
 
 # updating and upgrading server to implement file changes
-sudo apt-get update -o Acquire::CompressionTypes::Order::=gz
-sudo apt-get upgrade -y
-sudo apt-get update -y
+#sudo apt-get update -o Acquire::CompressionTypes::Order::=gz
+#sudo apt-get upgrade -y
+#sudo apt-get update -y
 
 # sudo apt-get install mongodb-org=3.2.20 -y
 sudo apt-get install -y mongodb-org=3.2.20 mongodb-org-server=3.2.20 mongodb-org-shell=3.2.20 mongodb-org-mongos=3.2.20 mongodb-org-tools=3.2.20

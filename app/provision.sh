@@ -52,7 +52,7 @@ sudo service nginx restart
 sudo service nginx status
 
 # install git
-sudo apt-get install git -y
+#sudo apt-get install git -y
 
 # install nodejs
 sudo apt-get install python-software-properties -y
@@ -61,18 +61,21 @@ sudo apt-get install nodejs -y
 
 # install npm
 sudo apt-get install npm -y
+sudo npm install ejs, mongoose, express
 sudo apt-get update
 
 # export db host value to enable database connection
-echo export DB_HOST="mongodb://54.75.18.114:27017/posts" >> ~/.bashrc
+#echo export DB_HOST="mongodb://54.75.18.114:27017/posts" >> ~/.bashrc
+export DB_HOST=mongodb://ubuntu@54.75.18.114:27017/posts
 sudo apt-get update -y
 
 # change into app folder
 cd /home/ubuntu/app/
 
 # install npm dependecies
-sudo  npm install
+sudo npm install
 sudo npm install pm2 -g
+npm install
 pm2 stop all
 
 # run app
