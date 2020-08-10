@@ -47,7 +47,7 @@
 	- link urls
 
 
-## Setting up a amazon web server
+## Setting up an amazon web server
 **Access AWS here**
 https://eu-west-1.console.aws.amazon.com/console/home?region=eu-west-1
 
@@ -90,6 +90,14 @@ https://eu-west-1.console.aws.amazon.com/console/home?region=eu-west-1
 4. Change security groups
 5. Add the relevant group
 6. This gives access the to person with that security group
+
+## Potential errors
+
+**Core data overload on Mongod**
+- If mongod shuts down once the app tries to connect to it you may not have correct inbound rules set up
+- The error shown on mongod with the below command will be "core data overload"
+```sudo systemctl status mongod```
+- To fix this go to DB_README and make sure inbound rules are set per image in the file. 
 
 ## What is AWS?
 **Infastructure as a service**
