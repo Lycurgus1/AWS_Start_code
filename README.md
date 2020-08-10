@@ -45,6 +45,7 @@
 	- db/db_provision.sh
 	- link urls
 
+## Common errors
 
 ## Setting up a amazon web server
 **Access AWS here**
