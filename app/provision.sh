@@ -65,6 +65,7 @@ sudo apt-get update
 
 # export db host value to enable database connection
 echo export DB_HOST="mongodb://34.245.57.210:27017/posts" >> ~/.bashrc
+sudo apt-get update -y
 
 # change into app folder
 cd /home/ubuntu/app/
