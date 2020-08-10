@@ -101,7 +101,7 @@ https://eu-west-1.console.aws.amazon.com/console/home?region=eu-west-1
 - A type of firewall
 - A list of IPs allowed and not allowed
 
-## What are "envionments"
+## What are environments
 **Definition**
 - Environments are where code is run
 
