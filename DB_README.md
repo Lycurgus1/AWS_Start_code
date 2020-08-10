@@ -52,7 +52,9 @@ B. select your DB AMI and click the security groups
 
 C. select edit inbound rules
 
-D. Update inbound rules so that the app ami is able to access the db AMI's port 27017
+D. Update inbound rules as per below image. The blacked out sources are "my ip" and 3.250... are the app ip/32
+
+![import_rules_db_server](imagesmd/lsoutput.jpeg)
 
 E. save and exit
 
@@ -81,6 +83,8 @@ E. Run your web app via the following command
  ```
 F. Access your webapp via your app AMI's public id
 ```http://your_app_ami_public_ip/posts```
+
+---
 
 ## Manual steps
 
