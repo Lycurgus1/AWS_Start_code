@@ -50,9 +50,9 @@ A. Access your EC2 dashboard and locate your AMIs
 
 B. select your DB AMI and click the security groups
 
-C. select edit inbound rules
+C. Create new security group
 
-D. Update inbound rules as per below image. The blacked out sources are "my ip" and 3.250... are the app ip/32
+D. Create inbound rules as per below image. The blacked out sources are "my ip" and 3.250... are the app ip/32
 
 ![import_rules_db_server](images/import_rules_db_server.jpg)
 
