@@ -128,6 +128,7 @@ C. add rules
 ## Theory underpinning this
 
 **terms**
+
 VPC - virtual private cloud, allows creaion of virtual private network
 
 IGW - internet gateway
@@ -143,6 +144,7 @@ SG - firewall at level of EC2
 EC2 - elastic computing 2
 
 **background knowledge**
+
 code is cheap, database is expensive
 
 database should not have internet acces
