@@ -86,7 +86,9 @@ G. Subnet associations
 	- add public subnet
 
 7. Secrity group
+
 **theory**
+
 - egress rules
 	- defualt 0.0.0.0/0 auto set
 	- allows everything to exit
@@ -95,20 +97,24 @@ G. Subnet associations
 	- by default outbound traffic is denie	
 	- is stateless?
 	- rule numbers matter
-	- can deny IP as well as all0w
+	- can deny IP as well as allow
+	
 - ingress rules 
 	- port 22 from our IP
 	- 80 for inter
 	- 443
 	- ephemeral on 0.0.0.0/0
 	- 27017 to allow connection to private (db) subnet
+	
 - egress rules
 	- allow all for now
+	
 - rules for public server
 	- allow all outbound traffic to public server (245.20.1.0/24)xc
 	- ingress 27017 from public server (245.20.1.0/24)
 	
 **steps**
+
 A. create new nacl
 
 B. tag = Eng67.Max.P.Route.NACL
