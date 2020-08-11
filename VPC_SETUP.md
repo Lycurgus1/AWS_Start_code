@@ -14,52 +14,79 @@ Task
 - create route table with public and private route
 - deploy app
 
-steps
-1. select vpc from aws services
-	A. ensure region is ireland
+**steps**
+### 1. select vpc from aws services
 
-2. create vpc from vpc menu not wizard
-	A. tag = Eng67.Max.P.VPC
-	B. Ipv4 CIDR block = 245.20.0.0/16
-	C. leave everything else >> create vpc
+A. ensure region is ireland
 
-3. create internet gateway
-	A. click on internet gateway - create
-	B. tag = Eng67.Max.P.IGW
-	C. attach to vpc
-	D. select yours, attach gateway
+### 2. create vpc from vpc menu not wizard
 
-4. create public subnet
-	A. click on subnets - create subnet
-	B. tag = Eng67.Max.P.Subnet.Public
-	C. select your vpc
-	D. 245.20.1.0/24 in IPv4 block
-	E. create
+A. tag = Eng67.Max.P.VPC
 
-5. create private subnet
-	A. click on subnets - create subnet
-	B. tag = Eng67.Max.P.Subnet.private
-	C. select your vpc
-	D. ip = 245.20.2.0/24, create
+B. Ipv4 CIDR block = 245.20.0.0/16
 
-6.create route table
-	- want to build in rigidity to limit damage from lack of understanding junior member might do
-	- make clear connecting to internet
-	- want to default to private
-	A. check route table not assoicated with VPC already
-		- keep for now
-		- rename
-	B. Select route tables, create route table
-	C. Add tag =Eng67.Max.P.Route.Public
-	D. select your vpc
-	E. create vpc
-	F. Edit Route - add 0.0.0.0/0
-		- target = internet gateway, choose your internet gateway
-	G. Subnet associations
-		- edit subnet associations
-		- add public subnet
+C. leave everything else >> create vpc
+
+### 3. create internet gateway
+
+A. click on internet gateway - create
+
+B. tag = Eng67.Max.P.IGW
+
+C. attach to vpc
+
+D. select yours, attach gateway
+
+### 4. create public subnet
+
+A. click on subnets - create subnet
+
+B. tag = Eng67.Max.P.Subnet.Public
+
+C. select your vpc
+
+D. 245.20.1.0/24 in IPv4 block
+
+E. create
+
+### 5. create private subnet
+
+A. click on subnets - create subnet
+
+B. tag = Eng67.Max.P.Subnet.private
+
+C. select your vpc
+
+D. ip = 245.20.2.0/24, create
+
+### 6.create route table
+
+**theory**
+- want to build in rigidity to limit damage from lack of understanding junior member might do
+- make clear connecting to internet
+- want to default to private
+
+**steps**
+A. check route table not assoicated with VPC already
+	- keep for now
+	- rename
+B. Select route tables, create route table
+
+C. Add tag =Eng67.Max.P.Route.Public
+
+D. select your vpc
+
+E. create vpc
+
+F. Edit Route - add 0.0.0.0/0
+	- target = internet gateway, choose your internet gateway
+	
+G. Subnet associations
+	- edit subnet associations
+	- add public subnet
 
 7. Secrity group
+**theory**
 - egress rules
 	- defualt 0.0.0.0/0 auto set
 	- allows everything to exit
@@ -80,13 +107,18 @@ steps
 - rules for public server
 	- allow all outbound traffic to public server (245.20.1.0/24)xc
 	- ingress 27017 from public server (245.20.1.0/24)
-	A. create new nacl
-	B. tag = Eng67.Max.P.Route.NACL
-	C. add rules
-		- per screenshot
-		- outbound allow everything per screenshot
+	
+**steps**
+A. create new nacl
+
+B. tag = Eng67.Max.P.Route.NACL
+
+C. add rules
+	- per screenshot
+	- outbound allow everything per screenshot
 
 ## Theory underpinning this
+
 **terms**
 VPC - virtual private cloud, allows creaion of virtual private network
 IGW - internet gateway
