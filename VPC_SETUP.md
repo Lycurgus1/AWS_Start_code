@@ -67,6 +67,7 @@ D. ip = 245.20.2.0/24, create
 - want to default to private
 
 **steps**
+
 A. check route table not assoicated with VPC already
 	- keep for now
 	- rename
@@ -86,7 +87,7 @@ G. Subnet associations
 	- edit subnet associations
 	- add public subnet
 
-7. Secrity group
+### 7. Secrity group
 
 **theory**
 
