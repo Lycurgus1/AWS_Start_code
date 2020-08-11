@@ -9,7 +9,7 @@
 - IPs - easy for humans to understand, but binar needed for computer understanding
 - actually binary behind the IP, translated into binary by the computer(see submask)
 
-##IPv4 vs IPv6
+## IPv4 vs IPv6
 - differing IP configurations
 
 ## Submask
