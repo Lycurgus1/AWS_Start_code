@@ -126,6 +126,18 @@ C. add rules
 	- outbound rules per the below image:
 	![rules_outbound_nacl](images/rules_outbound_nacl.PNG)
 
+### Testing
+
+A. create an ec2 instance with VPC of the one just created
+
+B. ssh into the instance
+
+C. run ```sudo apt-get install nginx```
+
+D. go onto your browser and insert the IP of the instance created
+
+E. if VPC has been created effectively then you will nginx install successful
+
 ## Theory underpinning this
 
 **terms**
