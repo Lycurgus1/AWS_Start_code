@@ -5,7 +5,7 @@
 https://github.com/Lycurgus1/NodeJSAppPipeline
 
 ## Installation steps
-Task
+### Task
 - create VPC
 - create private subnet within VPC
 - create public subnet with VPC
@@ -14,7 +14,6 @@ Task
 - create route table with public and private route
 - deploy app
 
-**steps**
 ### 1. select vpc from aws services
 
 A. ensure region is ireland
@@ -122,8 +121,10 @@ A. create new nacl
 B. tag = Eng67.Max.P.Route.NACL
 
 C. add rules
-	- per screenshot
-	- outbound allow everything per screenshot
+	- inbound rules per the below image:
+	![rules_inbound_nacl](images/rules_inbound_nacl.PNG)
+	- outbound rules per the below image:
+	![rules_outbound_nacl](images/rules_outbound_nacl.PNG)
 
 ## Theory underpinning this
 
