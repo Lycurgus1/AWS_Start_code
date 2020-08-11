@@ -122,7 +122,7 @@ B. tag = Eng67.Max.P.Route.NACL
 
 C. add rules
 	- inbound rules per the below image (my IP is blacked out):
-	![rules_inbound_NACL](images/rules_inbound_NACL.PNG)
+	![rules_inbound_NACL](images/rules_inbound_NACL.jpg)
 	- outbound rules per the below image:
 	![rules_outbound_nacl](images/rules_outbound_nacl.PNG)
 
