@@ -59,7 +59,7 @@ C. select your vpc
 
 D. ip = 245.20.2.0/24, create
 
-### 6.create route table
+### 6. create route table
 
 **theory**
 - want to build in rigidity to limit damage from lack of understanding junior member might do
@@ -70,6 +70,7 @@ D. ip = 245.20.2.0/24, create
 A. check route table not assoicated with VPC already
 	- keep for now
 	- rename
+	
 B. Select route tables, create route table
 
 C. Add tag =Eng67.Max.P.Route.Public
