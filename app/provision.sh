@@ -33,10 +33,10 @@ echo "server {
      location / {
          proxy_pass http://localhost:3000;
          proxy_http_version 1.1;
-         proxy_set_header Upgrade $http_upgrade;
+         proxy_set_header Upgrade \$http_upgrade;
          proxy_set_header Connection 'upgrade';
-         proxy_set_header Host $host;
-         proxy_cache_bypass $http_upgrade;
+         proxy_set_header Host \$host;
+         proxy_cache_bypass \$http_upgrade;
      }
  }" >> reverse-proxy.conf
 # recreating connection to database with new file(default without explicit statement)
@@ -46,10 +46,12 @@ sudo ln -s /etc/nginx/sites-available/reverse-proxy.conf /etc/nginx/sites-enable
 sudo nginx -t
 
 # restart nginx
-sudo service nginx restart
+sudo su
+service nginx restart
+exit
 
 # check status of nginx
-sudo service nginx status
+#sudo service nginx status
 
 # install git
 #sudo apt-get install git -y
@@ -66,8 +68,8 @@ sudo apt-get update
 
 # export db host value to enable database connection
 #echo export DB_HOST="mongodb://54.75.18.114:27017/posts" >> ~/.bashrc
-export DB_HOST=mongodb://ubuntu@54.75.18.114:27017/posts
-sudo apt-get update -y
+#export DB_HOST=mongodb://ubuntu@54.75.18.114:27017/posts
+#sudo apt-get update -y
 
 # change into app folder
 cd /home/ubuntu/app/
