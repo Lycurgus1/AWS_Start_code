@@ -2,7 +2,11 @@
 
 ## Dependencies
 - App set up per below link:
-https://github.com/Lycurgus1/NodeJSAppPipeline
+	- https://github.com/Lycurgus1/NodeJSAppPipeline
+
+- Git Bash
+	- This is used to access and manipulate the machines
+	- Download it here (alongisde other git softwrare): https://git-scm.com/downloads
 
 ## Installation steps
 ### Task
