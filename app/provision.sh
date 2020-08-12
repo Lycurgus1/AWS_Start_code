@@ -75,9 +75,9 @@ sudo apt-get update
 cd /home/ubuntu/app/
 
 # install npm dependecies
-sudo npm install
-sudo npm install pm2 -g
 npm install
+sudo npm install pm2 -g
+#npm install
 pm2 stop all
 
 # run app

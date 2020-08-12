@@ -28,7 +28,8 @@
 	- ./app_setup.sh
 	- cd app/
 	- chmod 777 provision.sh
-	- ./provision.sh
+	- cd ..
+	- ./app/provision.sh
 	- pm2 start app.js -f will run the app
 6. Access the app
 	- The below links will lead to the app
