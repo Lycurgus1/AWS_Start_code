@@ -46,9 +46,7 @@ sudo ln -s /etc/nginx/sites-available/reverse-proxy.conf /etc/nginx/sites-enable
 sudo nginx -t
 
 # restart nginx
-sudo su
-service nginx restart
-exit
+sudo systemctl nginx restart
 
 # check status of nginx
 #sudo service nginx status
